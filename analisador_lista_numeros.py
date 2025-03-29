@@ -1,4 +1,7 @@
 
+
+# função que recebe a lista de números do usuário
+
 def obter_lista_numeros():
     
     while True:
@@ -14,6 +17,8 @@ def obter_lista_numeros():
         except ValueError:
                 print("⚠️ Entrada inválida! Certifique-se de digitar apenas números separados por vírgula, como: 10,20,30")
 
+# função que recebe a referência de média do usuário
+
 def obter_ref_media():
 
     while True:
@@ -26,6 +31,7 @@ def obter_ref_media():
         except ValueError:
             print("⚠️ Entrada inválida! Certifique-se de digitar um número inteiro ou decimal")
 
+# função que vai extrair e calcular estatísticas
 
 def calcula_estatisticas(lista):
     
@@ -36,6 +42,7 @@ def calcula_estatisticas(lista):
     
     return (maior, menor, media, soma)
 
+# função que compara o valor de referência com a média calculada e retorna uma mensagem para o usuário
 
 def verifica_referencia(media, referencia):
     
@@ -47,6 +54,8 @@ def verifica_referencia(media, referencia):
         resultado = "você acertou em cheio, seu valor de referência é a média!"
         
     return (resultado)
+
+# função que printa as estatísticas no prompt
         
 def exibe_estatisticas(maior, menor, media, soma, referencia, resultado):
 
@@ -60,6 +69,8 @@ def exibe_estatisticas(maior, menor, media, soma, referencia, resultado):
     
     print("Quanto à média: " + resultado)
           
+
+# função principal que executa o código e chama as funções auiliares
         
 def main():
    while True:
@@ -74,6 +85,7 @@ def main():
             print("👋 Programa encerrado. Até mais!")
             break
         
-#inicia o programa
+# inicia o programa
+
 main()
     
